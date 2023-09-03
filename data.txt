@@ -1,0 +1,79 @@
+
+EQUIPO  Independiente de Cosquín (CAI)
+
+    APELLIDO	NOMBRE
+1	Alabart 	Eugenia
+2	Astray      Laura
+3	Astray      Noelia
+4	Borri       Soledad
+5	Fernandez   Belén
+6	Garcia      Ana Laura
+7	Garmendia   Noelia
+8	Godoy       Natalia
+9	Guzman      Silvina
+10	Sanchez     Lorena
+11	Vilchez     Melisa
+12	Vitullo     Natalia
+13	Zamboni     Belén
+
+D.T.    Viva    Pablo
+
+
+
+EQUIPO  Chelcas (TSC)
+
+    APELLIDO	NOMBRE			            Camiseta	Estatura
+1	GAZULLA	LINIANA INES	            14      	1.70
+2	VALLE	SANDRA MARIEL	            9       	1.65
+3	CHARLIER	MARIA PATRICIA 			8       	1.58
+4	KARLEN SANTILLAN	MICAELA PAULA				1,61
+5	ARIAS	MARIA EMILIA			    84 / 11	    1.57
+6	FERNANDEZ	MARIA			        20	        1.52
+7	BORTOLI	MARIA LAURA				                1.70
+8	AVILA	ANDREA CONSTANZA			5	        1.50
+9	BARRETO	MERCEDES VALERIA			6	        1.60
+10	LEDESMA	ANABEL ANDREA				            1.67
+11	BERRA	AYLEN DANIELA				            1.70
+12	ARIAS	YANINA IVANA
+
+D.T.		Frid	Danilo Ronán
+
+
+EQUIPO  Hindú Club
+
+    APELLIDO	NOMBRE	        	Camiseta	Estatura
+1	TORAL	MARIA MACARENA	            14	    1.68
+2	NATALI	ALICIA	            		10	    1.75
+3	CAGNOLO	CARLA VERONICA	            15	    1.58
+4	ZABALA	MARIA LAURA	            	8	    1.63
+5	MORENO	JULIETA VANESA	            6	    1.72
+6	CIA	ANA LAURA	            		4	    1.73
+7	CASANOVA	INES ELIZABETH	        11	    1.69
+8	ARTAZA	YUDITH	            		7	    1.64
+9	BRITOS 	MARIA LUZ	            	13	    1.74
+10	GARCIA	NATALIA	            		12	    1.56
+11	HERNANDEZ	MARIELA CRISTINA	    9	    1.63
+12	SINTORA	MARIA SOL	        		5   	1.66
+13	SANRRAME 	NOELIA	        			    1.63
+14	CORONEL	CONSUELO	        			    1.69
+
+D.T.		LOPEZ	ARIEL GERMAN
+
+
+
+EQUIPO  Poeta Lugones
+
+    APELLIDO	NOMBRE	                Camiseta	Estatura
+1	Moyano 	Carolina Evelin	    		0   	1.66
+2	Ahumada 	Claudia Elizabeth	    5   	1.70
+3	Choque	Leonor Marcela Luján  	   	9   	1.57
+4	Rivero 	Yanina Alejandra	    	14  	1.74
+5	Aurispa 	Maria Florencia	    	17	    1.60
+6	González 	María Inés	    		16
+7	Zarranz	Agostina	    		    10  	1.70
+8	Juárez 	Natalia Vanessa	    		22	    1.73
+9	Donda 	Paula	    		        24  	1.58
+10	Bustos 	Gabriela	    		    46	    1.68
+11	Bertola 	Melisa	    		    32
+
+D.T.		DALLA RIVA 	GUSTAVO DAVID
