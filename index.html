@@ -3,40 +3,52 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/styles.css">
+
         <title>EBAF-01 :: Home</title>
+
     </head>
     <body>
-        <main>
-            <h1>EBAF-01</h1>
-          
+
+        <header>
+            <div class="logo">
+                <a href="/">
+                    <img src="/img/logo.jpg" alt="Logo EBAF">
+                </a>
+            </div>
+
             <nav>
                 <a href="/">INICIO</a>
-                <a href="/equipos">EQUIPOS</a>
+                <a href="/equipos.html">Equipos</a>
+                <a href="/torneos.html">Torneos</a>
             </nav>
-    
-            <pre>
-                Fixture Torneo EBAF +35 - 1° Edición
 
-                Fecha 1		Viernes 01 de Septiembre
-                21:00 hs.	Chelcas TSC		vs.		Poeta Lugones
-                22:30 hs.	Hindú Club		vs.		Independiente
+        </header>
+        <main>
+            <h1>EBAF-01</h1>
+            <section>
 
-                Fecha 2		Viernes 08 de Septiembre
-                21:00 hs.	Independiente		vs.		Chelcas TSC
-                22:30 hs.	Poeta Lugones		vs.		Hindú Club
-
-                Fecha 3		Viernes 15 de Septiembre
-                21:00 hs.	Poeta Lugones		vs.		Independiente
-                22:30 hs.	Chelcas TSC		vs.		Hindú Club
-
-                Fecha Libre		Viernes 22 de Septiembre
-
-                Fecha Final		Viernes 29 de Septiembre
-                21:00 hs.	Tercero		vs.		Cuarto
-                22:30 hs.	Primero		vs.		Segundo
-            </pre>
-
+            </section>
         </main>
+        <aside></aside>
+        <footer></footer>
 
-</body>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="/config/data.js"></script>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                console.log(teams.cai.name);
+                console.log(players.player1);
+              });
+
+        </script>
+    </body>
 </html>

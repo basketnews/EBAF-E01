@@ -1,0 +1,38 @@
+body{
+    display: grid;
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    "main main main aside"
+    "footer footer footer footer";
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+
+header {
+    grid-area: header;
+    height: 20vh;
+    background-color: #aaa;
+}
+main {
+    grid-area: main;
+    height: 60vh;
+    background-color: #bbb;
+}
+aside {
+    grid-area: aside;
+    height: 60vh;
+    background-color: #ccc;
+}
+footer {
+    grid-area: footer;
+    height: 20vh;
+    background-color: #ddd;
+}
+
+
+nav{
+
+}
