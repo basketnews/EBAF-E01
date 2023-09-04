@@ -1,38 +1,89 @@
 body{
     display: grid;
     grid-template-columns:repeat(4, minmax(0, 1fr));
-    grid-template-rows: auto;
+    grid-template-rows: 100px 1fr minmax(25px, auto);
     grid-template-areas:
     "header header header header"
     "main main main aside"
     "footer footer footer footer";
-    justify-items: stretch;
-    align-items: stretch;
+    /* justify-items: stretch;
+    align-items: stretch; */
 }
 
 
+.hide{
+    display: none;
+}
+
 header {
     grid-area: header;
-    height: 20vh;
     background-color: #aaa;
 }
 main {
     grid-area: main;
-    height: 60vh;
     background-color: #bbb;
 }
 aside {
     grid-area: aside;
-    height: 60vh;
     background-color: #ccc;
 }
 footer {
     grid-area: footer;
-    height: 20vh;
     background-color: #ddd;
 }
 
 
 nav{
 
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    background-color: #fafafa;
+    padding: 16px 24px;
+}
+
+.list-item {
+    display: flex;
+    height: 350px;
+    flex: 1 0 50%;
+
+
+}
+
+.card{
+    display: flex;
+    flex: 1 0 50%;
+    position: relative;
+    flex-direction: column;
+    min-width: 0;
+    height: min-content;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0,0,0,.125);
+
+}
+
+.card-title{
+    font-size: 1vmax;
+    line-height: 26px;
+    align-self: center;
+}
+
+.card ul {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.card:hover ul {
+    height: 250px;
+    display: block;
+    opacity: 1;
+    transition: height .5s, opacity 1.3s;
 }
