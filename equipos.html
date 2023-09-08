@@ -3,16 +3,54 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" href="css/styles.css">
 
         <title>EBAF-01 :: Equipos</title>
     </head>
     <body>
-        <header class="bg-amarillo-600 d-flex align-content-center p-2 justify-content-between">
-            <a href="index.html" class="h-100">
+        <header class="bg-amarillo-600">
+
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand order-1 order-sm-1" href="#"><img src="media/img/ebaf_logo.png" class="logo-ebaf" alt="Logo EBAF" style="height: 60px;"/></a>
+
+                    <button class="navbar-toggler order-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse order-3 order-sm-2" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-sm-center w-100">
+                            <li class="nav-item">
+                                <a class="nav-link bordo-500 active" aria-current="page" href="index.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bordo-500" href="equipos.html">Equipos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bordo-500" href="posiciones.html">Posiciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bordo-500" href="fotos.html">Fotos</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="navbar-text order-2 order-sm-3">
+                        <div>EBAF-01 / +35</div>
+                        <div>Septiembre 2023</div>
+                    </div>
+                </div>
+            </nav>
+
+
+            <!-- <a href="index.html" class="h-100">
                 <img src="media/img/ebaf_logo.png" class="logo-ebaf h-100" alt="Logo EBAF" />
             </a>
 
@@ -24,29 +62,27 @@
             </nav>
 
             <div class="text-end">
-                <div>EBAF-01 / +35</div>
-                <div>Septiembre 2023</div>
-            </div>
+
+            </div> -->
         </header>
 
         <main>
-            <h1>Equipos</h1>
 
-            <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
 
-                <html>
-                    <head>
-                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-                    <link rel="stylesheet" href="/common.css">
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-                    </head>
-                        <body>
+                        <h1 class="mt-4 mt-md-5">Equipos</h1>
+
+                        <section>
+
+
 
                             <div class="container">
                                 <div class="row">
 
 
-                                    <div class="col-8 offset-2">
+                                    <div class="col-12 col-sm-8 offset-sm-2">
                                         <div class="row justify-content-evenly">
 
                                             <div class="col-sm-6 mb-3 mb-sm-4">
@@ -109,12 +145,14 @@
                             </div>
 
 
-                        </body>
-                    </html>
 
 
 
-            </section>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer class="bg-amarillo-600 text-center p-2 fs-3">

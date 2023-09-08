@@ -3,16 +3,54 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" href="css/styles.css">
 
         <title>EBAF-01 :: Home</title>
     </head>
     <body>
-        <header class="bg-amarillo-600 d-flex align-content-center p-2 justify-content-between">
-            <a href="index.html" class="h-100">
+        <header class="bg-amarillo-600">
+
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand order-1 order-sm-1" href="#"><img src="media/img/ebaf_logo.png" class="logo-ebaf" alt="Logo EBAF" style="height: 60px;"/></a>
+
+                    <button class="navbar-toggler order-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse order-3 order-sm-2" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-sm-center w-100">
+                            <li class="nav-item">
+                                <a class="nav-link bordo-500 active" aria-current="page" href="index.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bordo-500" href="equipos.html">Equipos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bordo-500" href="posiciones.html">Posiciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bordo-500" href="fotos.html">Fotos</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="navbar-text order-2 order-sm-3">
+                        <div>EBAF-01 / +35</div>
+                        <div>Septiembre 2023</div>
+                    </div>
+                </div>
+            </nav>
+
+
+            <!-- <a href="index.html" class="h-100">
                 <img src="media/img/ebaf_logo.png" class="logo-ebaf h-100" alt="Logo EBAF" />
             </a>
 
@@ -24,19 +62,198 @@
             </nav>
 
             <div class="text-end">
-                <div>EBAF-01 / +35</div>
-                <div>Septiembre 2023</div>
-            </div>
+
+            </div> -->
         </header>
 
         <main>
-            <h1>Novedades</h1>
 
-            <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
 
-            </section>
+                        <h1 class="mt-4 mt-md-5">Novedades</h1>
+
+                        <section>
+
+                            <div class="p-2 p-md-5">
+                                <ul class="nav nav-pills card-header-pills" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="fecha-1-tab" data-bs-toggle="tab" data-bs-target="#fecha-1" type="button" role="tab" aria-controls="fecha-1" aria-selected="true">Fecha 1</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="fecha-2-tab" data-bs-toggle="tab" data-bs-target="#fecha-2" type="button" role="tab" aria-controls="fecha-2" aria-selected="false">Fecha 2</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link disabled" id="fecha-3-tab" data-bs-toggle="tab" data-bs-target="#fecha-3" type="button" role="tab" aria-controls="fecha-3" aria-selected="false"  aria-disabled="true">Fecha 3</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link disabled" id="fecha-4-tab" data-bs-toggle="tab" data-bs-target="#fecha-4" type="button" role="tab" aria-controls="fecha-4" aria-selected="false"  aria-disabled="true">Fecha 4</button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="fecha-1" role="tabpanel" aria-labelledby="fecha-1-tab">
+
+
+                                        <div class="d-flex flex-column flex-sm-row justify-content-around pt-4 px-2 p-md-5" style="gap: 24px">
+
+                                            <div class="d-flex flex-column flex-sm-row border rounded-2 p-4" style="gap: 64px">
+                                                <div class="d-flex flex-column" style="gap:24px;">
+
+                                                    <div class="d-flex align-items-center" style="gap:16px;">
+                                                        <div><img src="media/img/logo-chelcas.jpeg" class="rounded-circle" alt="Logo Chelcas" style="height: 40px; width: 40px;"></div>
+                                                        <div style="min-width:130px;">Chelcas</div>
+                                                        <div>
+                                                            <span>42</span>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="d-flex align-items-center" style="gap:16px;">
+                                                        <div><img src="media/img/logo-poeta.jpg" class="rounded-circle" alt="Logo Poeta Lugones" style="height: 40px; width: 40px;"></div>
+                                                        <div style="min-width:130px;">Poeta Lugones</div>
+                                                        <div>
+                                                            <span>37</span>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                                <div class="d-flex flex-column align-items-end justify-content-center">
+                                                    <p class="mb-0">01/09/2023</p>
+                                                    <p><small>21:00 HS</small></p>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="d-flex flex-column flex-sm-row border rounded-2 p-4" style="gap: 64px">
+                                                <div class="d-flex flex-column" style="gap:24px;">
+
+                                                    <div class="d-flex align-items-center" style="gap:16px;">
+                                                        <div><img src="media/img/logo-cai.png" class="img-fluid" alt="Logo CAI" style="height: 40px; width: 40px;"></div>
+                                                        <div style="min-width:130px;">C.A.I.</div>
+                                                        <div>
+                                                            <span>13</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center" style="gap:16px;">
+                                                        <div><img src="media/img/logo-hindu-club.jpeg" class="rounded-circle" alt="Logo Hindú Club" style="height: 40px; width: 40px;"></div>
+                                                        <div style="min-width:130px;">Hindú Club</div>
+                                                        <div>
+                                                            <span>46</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="d-flex flex-column align-items-end justify-content-center">
+                                                    <p class="mb-0">01/09/2023</p>
+                                                    <p><small>22:30 HS</small></p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="tab-pane fade" id="fecha-2" role="tabpanel" aria-labelledby="fecha-2-tab">
+                                        <div class="d-flex flex-column flex-sm-row justify-content-around p-2 p-md-5" style="gap: 24px">
+
+                                            <div class="d-flex flex-column flex-sm-row border rounded-2 p-4" style="gap: 64px">
+                                                <div class="d-flex flex-column" style="gap:24px;">
+
+                                                    <div class="d-flex align-items-center" style="gap:16px;">
+                                                        <div><img src="media/img/logo-chelcas.jpeg" class="rounded-circle" alt="Logo Chelcas" style="height: 40px; width: 40px;"></div>
+                                                        <div style="min-width:130px;">Chelcas</div>
+                                                        <div>
+                                                            <span>-</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center" style="gap:16px;">
+                                                        <div><img src="media/img/logo-cai.png" class="img-fluid" alt="Logo CAI" style="height: 40px; width: 40px;"></div>
+                                                        <div style="min-width:130px;">C.A.I.</div>
+                                                        <div>
+                                                            <span>-</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="d-flex flex-column align-items-end justify-content-center">
+                                                    <p class="mb-0">08/09/2023</p>
+                                                    <p><small>21:00 HS</small></p>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="d-flex flex-column flex-sm-row border rounded-2 p-4" style="gap: 64px">
+                                                <div class="d-flex flex-column" style="gap:24px;">
+
+                                                    <div class="d-flex align-items-center" style="gap:16px;">
+                                                        <div><img src="media/img/logo-poeta.jpg" class="rounded-circle" alt="Logo Poeta Lugones" style="height: 40px; width: 40px;"></div>
+                                                        <div style="min-width:130px;">Poeta Lugones</div>
+                                                        <div>
+                                                            <span>-</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center" style="gap:16px;">
+                                                        <div><img src="media/img/logo-hindu-club.jpeg" class="rounded-circle" alt="Logo Hindú Club" style="height: 40px; width: 40px;"></div>
+                                                        <div style="min-width:130px;">Hindú Club</div>
+                                                        <div>
+                                                            <span>-</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="d-flex flex-column align-items-end justify-content-center">
+                                                    <p class="mb-0">08/09/2023</p>
+                                                    <p><small>22:30 HS</small></p>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab-pane fade" id="fecha-3" role="tabpanel" aria-labelledby="fecha-3-tab">
+                                        Fecha 3
+                                    </div>
+
+
+                                    <div class="tab-pane fade" id="fecha-4" role="tabpanel" aria-labelledby="fecha-4-tab">
+                                        Fecha 4
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+                        </section>
+
+                    </div>
+                </div>
+
+            </div>
         </main>
-        
+
         <footer class="bg-amarillo-600 text-center p-2 fs-3">
             <a href="https://www.instagram.com/ebaf.basquet/" class="bordo-500 p-1" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://www.facebook.com/basquetfeme/" class="bordo-500 p-1" target="_blank"><i class="bi bi-facebook"></i></a>

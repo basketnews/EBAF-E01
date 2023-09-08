@@ -11,21 +11,23 @@ body {
 }
 
 header {
-    align-items: center;
+    /* align-items: center; */
     grid-area: header;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     align-content: center;
-    height: 15vh;
+    height: 10vh; */
 }
 
 /* nav {} */
 
 main {
     grid-area: main;
+    min-height: 80vh;
 }
 
 footer {
     grid-area: footer;
+    min-height: 10vh;
 }
 
 
