@@ -23,3 +23,26 @@ Ahí pondría
 
 Fotos
     Bueno acá fotos y videos
+
+
+
+
+Colores:
+
+.amarillo-200{color: #ffffdb;}
+.amarillo-500{color: #ffc60b;}
+.amarillo-600{color: #ffc301;}
+.naranja-300 {color: #ff5733;}
+.naranja-500 {color: #ff8901;}
+.bordo-500{color: #900c3e;}
+.rojo-500{color: #c70039;}
+.negro-500 {color:#444444;}
+
+.bg-amarillo-200{background-color: #ffffdb;}
+.bg-amarillo-500{background-color: #ffc60b;}
+.bg-naranja-300 {background-color: #ff5733;}
+.bg-naranja-500 {background-color: #ff8901;}
+.bg-bordo-500{background-color: #900c3e;}
+.bg-rojo-500{background-color: #c70039;}
+.bg-amarillo-600{background-color: #ffc301;}
+.bg-negro-500 {background-color:#444444;}
