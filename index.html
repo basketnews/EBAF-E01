@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="16x16"  href="media/img/favicon-16x16.png">
 <!--
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
@@ -12,243 +13,418 @@
 
         <title>EBAF-01 :: Home</title>
     </head>
+
     <body>
         <header class="bg-amarillo-600">
-
-
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand order-1 order-sm-1" href="#"><img src="media/img/ebaf_logo.png" class="logo-ebaf" alt="Logo EBAF" style="height: 60px;"/></a>
+                    <a class="navbar-brand order-1 order-sm-1 m-0" href="#"><img src="media/img/ebaf_logo.png" class="logo-ebaf" alt="Logo EBAF" style="height: 60px;"/></a>
 
                     <button class="navbar-toggler order-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse order-3 order-sm-2" id="navbarText">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-sm-center w-100">
-                            <li class="nav-item">
-                                <!-- <a class="nav-link bordo-500 active" aria-current="page" href="index.html">Novedades</a> -->
-                                <a class="nav-link bordo-500" aria-current="page" href="index.html">Novedades</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link bordo-500" href="equipos.html">Equipos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link bordo-500" href="resultados.html">Resultados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link bordo-500" href="fotos.html">Fotos</a>
-                            </li>
+                    <div id="navbarText" class="collapse navbar-collapse order-3 order-sm-2 fs-5 text-center">
+                        <ul class="navbar-nav justify-content-sm-center w-100">
+                            <li class="nav-item mx-2"><a class="nav-link bordo-500 active" aria-current="page" href="index.html">Novedades</a></li>
+                            <li class="nav-item mx-2"><a class="nav-link bordo-500" href="equipos.html">Equipos</a></li>
+                            <li class="nav-item mx-2"><a class="nav-link bordo-500" href="galeria.html">Galería</a></li>
                         </ul>
-
                     </div>
 
                     <div class="navbar-text order-2 order-sm-3">
-                        <div>EBAF-01 / +35</div>
-                        <div>Septiembre 2023</div>
+                        <div>E01 / +35</div>
+                        <div>Sep. 2023</div>
                     </div>
                 </div>
             </nav>
-
-
-            <!-- <a href="index.html" class="h-100">
-                <img src="media/img/ebaf_logo.png" class="logo-ebaf h-100" alt="Logo EBAF" />
-            </a>
-
-            <nav class="d-inline-flex fs-4">
-                <a href="index.html" class="nav-item mx-3 bordo-500">Novedades</a>
-                <a href="equipos.html" class="nav-item mx-3 bordo-500">Equipos</a>
-                <a href="resultados.html" class="nav-item mx-3 bordo-500">Resultados</a>
-                <a href="fotos.html" class="nav-item mx-3 bordo-500">Fotos</a>
-            </nav>
-
-            <div class="text-end">
-
-            </div> -->
         </header>
 
         <main>
-
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-
                         <section>
-                            <h1 class="mt-4 mt-md-5">Novedades</h1>
-                            <div class="p-2 p-md-5">
-                                <ul class="nav nav-pills card-header-pills" id="myTab" role="tablist">
+                            <h1 class="d-block d-md-none mt-4 text-center">Novedades</h1>
+
+                            <div class="p-2">
+
+                                <ul id="myTab" class="nav nav-pills card-header-pills justify-content-center mt-md-4" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="fecha-1-tab" data-bs-toggle="tab" data-bs-target="#fecha-1" type="button" role="tab" aria-controls="fecha-1" aria-selected="true">Fecha 1</button>
+                                        <button class="nav-link active" id="resultados-tab" data-bs-toggle="tab" data-bs-target="#resultados" type="button" role="tab" aria-controls="resultados" aria-selected="true">Resultados</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="fecha-2-tab" data-bs-toggle="tab" data-bs-target="#fecha-2" type="button" role="tab" aria-controls="fecha-2" aria-selected="false">Fecha 2</button>
+                                        <button class="nav-link" id="posiciones-tab" data-bs-toggle="tab" data-bs-target="#posiciones" type="button" role="tab" aria-controls="posiciones" aria-selected="false">Posiciones</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link disabled" id="fecha-3-tab" data-bs-toggle="tab" data-bs-target="#fecha-3" type="button" role="tab" aria-controls="fecha-3" aria-selected="false"  aria-disabled="true">Fecha 3</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link disabled" id="fecha-4-tab" data-bs-toggle="tab" data-bs-target="#fecha-4" type="button" role="tab" aria-controls="fecha-4" aria-selected="false"  aria-disabled="true">Fecha 4</button>
+                                        <button class="nav-link" id="stats-tab" data-bs-toggle="tab" data-bs-target="#stats" type="button" role="tab" aria-controls="stats" aria-selected="false"  aria-disabled="true">Stats</button>
                                     </li>
                                 </ul>
 
+
                                 <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="fecha-1" role="tabpanel" aria-labelledby="fecha-1-tab">
 
-                                        <div class="d-flex flex-column flex-sm-row justify-content-around pt-4 px-2 p-md-5" style="gap: 24px">
+                                    <div class="tab-pane fade show active" id="resultados" role="tabpanel" aria-labelledby="resultados-tab">
 
-                                            <div class="d-flex flex-column flex-sm-row border rounded-2 p-4" style="gap: 64px">
-                                                <div class="d-flex flex-column" style="gap:24px;">
-
-                                                    <div class="d-flex align-items-center" style="gap:16px;">
-                                                        <div><img src="media/img/logo-chelcas.jpeg" class="rounded-circle" alt="Logo Chelcas" style="height: 40px; width: 40px;"></div>
-                                                        <div style="min-width:130px;">Chelcas</div>
-                                                        <div>
-                                                            <span>42</span>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="d-flex align-items-center" style="gap:16px;">
-                                                        <div><img src="media/img/logo-poeta.jpg" class="rounded-circle" alt="Logo Poeta Lugones" style="height: 40px; width: 40px;"></div>
-                                                        <div style="min-width:130px;">Poeta Lugones</div>
-                                                        <div>
-                                                            <span>37</span>
-                                                        </div>
-                                                    </div>
-
-
-
-                                                </div>
-
-                                                <div class="d-flex flex-column align-items-end justify-content-center">
-                                                    <p class="mb-0">01/09/2023</p>
-                                                    <p><small>21:00 HS</small></p>
-                                                </div>
-
+                                        <div id="fecha-3" class="px-2 py-2 p-md-4 text-black-50">
+                                            <div class="row border rounded-2 my-2 p-2 justify-content-between amarillo-200 bg-negro-500">
+                                                <div class="col-4 fw-bold text-nowrap text-start">Fecha 3...</div>
+                                                <div class="col-8 text-nowrap text-end">Viernes 15/09/2023</div>
                                             </div>
-
-
-                                            <div class="d-flex flex-column flex-sm-row border rounded-2 p-4" style="gap: 64px">
-                                                <div class="d-flex flex-column" style="gap:24px;">
-
-                                                    <div class="d-flex align-items-center" style="gap:16px;">
-                                                        <div><img src="media/img/logo-cai.png" class="img-fluid" alt="Logo CAI" style="height: 40px; width: 40px;"></div>
-                                                        <div style="min-width:130px;">C.A.I.</div>
-                                                        <div>
-                                                            <span>13</span>
+                                            
+                                            <div class="row justify-content-around">
+                                                <div class="col-12 col-md-5 border rounded-2 my-2 p-4 justify-content-center">
+                                                    <p class="mb-0 small text-nowrap text-center">21:00 hs. Próximamente...</p><hr />
+                                                    
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <div class="col-11">
+                                                            <img src="media/img/logo-poeta.jpg" class="rounded-circle me-3" alt="Logo Poeta" style="height: 40px; width: 40px;">
+                                                            <span>Poeta Lugones</span>
                                                         </div>
+                                                        <div class="col-1">...</div>
                                                     </div>
 
-                                                    <div class="d-flex align-items-center" style="gap:16px;">
-                                                        <div><img src="media/img/logo-hindu-club.jpeg" class="rounded-circle" alt="Logo Hindú Club" style="height: 40px; width: 40px;"></div>
-                                                        <div style="min-width:130px;">Hindú Club</div>
-                                                        <div>
-                                                            <span>46</span>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="col-11">
+                                                            <img src="media/img/logo-cai.png" class="col-2 me-3" alt="Logo CAI" style="height: 40px; width: 40px;">
+                                                            <span>C.A.I. CQN</span>
                                                         </div>
+                                                        <div class="col-1">...</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-5 border rounded-2 my-2 p-4 justify-content-center">
+                                                    <p class="mb-0 small text-nowrap text-center">22:30 hs. Próximamente...</p><hr />
+
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <div class="col-11">
+                                                            <img src="media/img/logo-chelcas.jpeg" class="rounded-circle me-3" alt="Logo Chelcas" style="height: 40px; width: 40px;">
+                                                            <span>Chelcas TSC</span>
+                                                        </div>
+                                                        <div class="col-1">...</div>
                                                     </div>
 
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="col-11">
+                                                            <img src="media/img/logo-hindu-club.jpeg" class="col-2 rounded-circle me-3" alt="Logo Hindu" style="height: 40px; width: 40px;">
+                                                            <span>Hindú Club</span>
+                                                        </div>
+                                                        <div class="col-1">...</div>
+                                                    </div>
                                                 </div>
-
-                                                <div class="d-flex flex-column align-items-end justify-content-center">
-                                                    <p class="mb-0">01/09/2023</p>
-                                                    <p><small>22:30 HS</small></p>
-                                                </div>
-
                                             </div>
+                                        </div>
 
+                                        <div id="fecha-2" class="px-4 py-2 p-md-4">
+                                            <div class="row border rounded-2 my-2 p-2 justify-content-between amarillo-200 bg-rojo-500">
+                                                <div class="col-4 fw-bold text-nowrap text-start">Fecha 2</div>
+                                                <div class="col-8 text-nowrap text-end">Viernes 08/09/2023</div>
+                                            </div>
+                                            
+                                            <div class="row justify-content-around">
+                                                <div class="col-12 col-md-5 border rounded-2 my-2 p-4 justify-content-center">
+                                                    <p class="mb-0 small text-nowrap text-center">21:00 hs.</p><hr />
+                                                    
+                                                    <div class="d-flex align-items-center my-3 p-2">
+                                                        <div class="col-11">
+                                                            <img src="media/img/logo-cai.png" class="col-2 me-3" alt="Logo CAI" style="height: 40px; width: 40px;">
+                                                            <span>C.A.I. CQN</span>
+                                                        </div>
+                                                        <div class="col-1">32</div>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center p-2 bg-amarillo-200 fw-bold rounded-2">
+                                                        <div class="col-11">
+                                                            <img src="media/img/logo-chelcas.jpeg" class="rounded-circle me-3" alt="Logo Chelcas" style="height: 40px; width: 40px;">
+                                                            <span>Chelcas TSC</span>
+                                                        </div>
+                                                        <div class="col-1">42</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-5 border rounded-2 my-2 p-4 justify-content-center">
+                                                    <p class="mb-0 small text-nowrap text-center">22:30 hs.</p><hr />
+
+                                                    <div class="d-flex align-items-center my-3 p-2">
+                                                        <div class="col-11">
+                                                            <img src="media/img/logo-poeta.jpg" class="rounded-circle me-3" alt="Logo Poeta" style="height: 40px; width: 40px;">
+                                                            <span>Poeta Lugones</span>
+                                                        </div>
+                                                        <div class="col-1">31</div>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center p-2 bg-amarillo-200 fw-bold rounded-2">
+                                                        <div class="col-11">
+                                                            <img src="media/img/logo-hindu-club.jpeg" class="col-2 rounded-circle me-3" alt="Logo Hindu" style="height: 40px; width: 40px;">
+                                                            <span>Hindú Club</span>
+                                                        </div>
+                                                        <div class="col-1">47</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="fecha-1" class="px-4 py-2 p-md-4">
+                                            <div class="row border rounded-2 my-2 p-2 justify-content-between amarillo-200 bg-rojo-500">
+                                                <div class="col-4 fw-bold text-nowrap text-start">Fecha 1</div>
+                                                <div class="col-8 text-nowrap text-end">Viernes 01/09/2023</div>
+                                            </div>
+                                            
+                                            <div class="row justify-content-around">
+                                                <div class="col-12 col-md-5 border rounded-2 my-2 p-4 justify-content-center">
+                                                    <p class="mb-0 small text-nowrap text-center">21:00 hs.</p><hr />
+                                                    
+                                                    <div class="d-flex align-items-center my-3 p-2 bg-amarillo-200 fw-bold rounded-2">
+                                                        <div class="col-11">
+                                                            <img src="media/img/logo-chelcas.jpeg" class="rounded-circle me-3" alt="Logo Chelcas" style="height: 40px; width: 40px;">
+                                                            <span>Chelcas TSC</span>
+                                                        </div>
+                                                        <div class="col-1">42</div>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center p-2">
+                                                        <div class="col-11">
+                                                            <img src="media/img/logo-poeta.jpg" class="rounded-circle me-3" alt="Logo Poeta" style="height: 40px; width: 40px;">
+                                                            <span>Poeta Lugones</span>
+                                                        </div>
+                                                        <div class="col-1">37</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-5 border rounded-2 my-2 p-4 justify-content-center">
+                                                    <p class="mb-0 small text-nowrap text-center">22:30 hs.</p><hr />
+
+                                                    <div class="d-flex align-items-center my-3 p-2 bg-amarillo-200 fw-bold rounded-2">
+                                                        <div class="col-11">
+                                                            <img src="media/img/logo-hindu-club.jpeg" class="col-2 rounded-circle me-3" alt="Logo Hindu" style="height: 40px; width: 40px;">
+                                                            <span>Hindú Club</span>
+                                                        </div>
+                                                        <div class="col-1">46</div>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center p-2">
+                                                        <div class="col-11">
+                                                            <img src="media/img/logo-cai.png" class="col-2 me-3" alt="Logo CAI" style="height: 40px; width: 40px;">
+                                                            <span>C.A.I. CQN</span>
+                                                        </div>
+                                                        <div class="col-1">13</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                     </div>
 
 
+                                    <div class="tab-pane fade" id="posiciones" role="tabpanel" aria-labelledby="posiciones-tab">
 
-                                    <div class="tab-pane fade" id="fecha-2" role="tabpanel" aria-labelledby="fecha-2-tab">
-                                        <div class="d-flex flex-column flex-sm-row justify-content-around p-2 p-md-5" style="gap: 24px">
-
-                                            <div class="d-flex flex-column flex-sm-row border rounded-2 p-4" style="gap: 64px">
-                                                <div class="d-flex flex-column" style="gap:24px;">
-
-                                                    <div class="d-flex align-items-center" style="gap:16px;">
-                                                        <div><img src="media/img/logo-chelcas.jpeg" class="rounded-circle" alt="Logo Chelcas" style="height: 40px; width: 40px;"></div>
-                                                        <div style="min-width:130px;">Chelcas</div>
-                                                        <div>
-                                                            <span>-</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="d-flex align-items-center" style="gap:16px;">
-                                                        <div><img src="media/img/logo-cai.png" class="img-fluid" alt="Logo CAI" style="height: 40px; width: 40px;"></div>
-                                                        <div style="min-width:130px;">C.A.I.</div>
-                                                        <div>
-                                                            <span>-</span>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="d-flex flex-column align-items-end justify-content-center">
-                                                    <p class="mb-0">08/09/2023</p>
-                                                    <p><small>21:00 HS</small></p>
-                                                </div>
-
+                                        <div class="px-2 py-2 p-md-4">
+                                            <div class="row border rounded-2 my-2 p-2 justify-content-between amarillo-200 bg-rojo-500">
+                                                <div class="col-12 fw-bold text-nowrap text-center">Tabla de Posiciones a la Fecha 2</div>
                                             </div>
-
-
-                                            <div class="d-flex flex-column flex-sm-row border rounded-2 p-4" style="gap: 64px">
-                                                <div class="d-flex flex-column" style="gap:24px;">
-
-                                                    <div class="d-flex align-items-center" style="gap:16px;">
-                                                        <div><img src="media/img/logo-poeta.jpg" class="rounded-circle" alt="Logo Poeta Lugones" style="height: 40px; width: 40px;"></div>
-                                                        <div style="min-width:130px;">Poeta Lugones</div>
-                                                        <div>
-                                                            <span>-</span>
-                                                        </div>
+                                            
+                                            <div class="row justify-content-around">
+                                                <div class="col-12 col-md-8 border rounded-2 my-2 p-4 p-md-4 justify-content-center">
+                                                    <div class="d-flex mb-0 fw-bold">
+                                                        <span class="col-4 text-start">Equipo</span>
+                                                        <span class="col-1 text-center">J</span>
+                                                        <span class="col-1 text-center">G</span>
+                                                        <span class="col-1 text-center">P</span>
+                                                        <span class="col-1 text-center">Pt</span>
+                                                        <span class="col-1 text-center">Gf</span>
+                                                        <span class="col-2 text-center">Ge</span>
+                                                        <span class="col-1 text-center">Dg</span>
+                                                    </div>
+                                                    
+                                                    <hr class="mt-1" />
+                                                    
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <span class="col-4 text-nowrap text-start">
+                                                            <img src="media/img/logo-hindu-club.jpeg" class="rounded-circle me-1" alt="Logo Hindu" style="height: 20px; width: 20px;">
+                                                            <span>Hindú</span>
+                                                        </span>
+                                                        <span class="col-1 text-center">2</span>
+                                                        <span class="col-1 text-center">2</span>
+                                                        <span class="col-1 text-center">0</span>
+                                                        <span class="col-1 text-center bg-amarillo-200 fw-bold rounded-2 fw-bold">4</span>
+                                                        <span class="col-1 text-center">93</span>
+                                                        <span class="col-2 text-center">44</span>
+                                                        <span class="col-1 text-center bg-amarillo-200 fw-bold rounded-2">49</span>
                                                     </div>
 
-                                                    <div class="d-flex align-items-center" style="gap:16px;">
-                                                        <div><img src="media/img/logo-hindu-club.jpeg" class="rounded-circle" alt="Logo Hindú Club" style="height: 40px; width: 40px;"></div>
-                                                        <div style="min-width:130px;">Hindú Club</div>
-                                                        <div>
-                                                            <span>-</span>
-                                                        </div>
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <span class="col-4 text-nowrap text-start">
+                                                            <img src="media/img/logo-chelcas.jpeg" class="rounded-circle me-1" alt="Logo Chelcas" style="height: 20px; width: 20px;">
+                                                            <span>Chelcas</span>
+                                                        </span>
+                                                        <span class="col-1 text-center">2</span>
+                                                        <span class="col-1 text-center">2</span>
+                                                        <span class="col-1 text-center">0</span>
+                                                        <span class="col-1 text-center bg-amarillo-200 fw-bold rounded-2">4</span>
+                                                        <span class="col-1 text-center">84</span>
+                                                        <span class="col-2 text-center">69</span>
+                                                        <span class="col-1 text-center bg-amarillo-200 fw-bold rounded-2">15</span>
                                                     </div>
 
-                                                </div>
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <span class="col-4 text-nowrap text-start">
+                                                            <img src="media/img/logo-cai.png" class="me-1" alt="Logo CAI" style="height: 20px; width: 20px;">
+                                                            <span>C.A.I.</span>
+                                                        </span>
+                                                        <span class="col-1 text-center">2</span>
+                                                        <span class="col-1 text-center">0</span>
+                                                        <span class="col-1 text-center">2</span>
+                                                        <span class="col-1 text-center bg-amarillo-200 fw-bold rounded-2">2</span>
+                                                        <span class="col-1 text-center">68</span>
+                                                        <span class="col-2 text-center">89</span>
+                                                        <span class="col-1 text-center bg-amarillo-200 fw-bold rounded-2">-21</span>
+                                                    </div>
 
-                                                <div class="d-flex flex-column align-items-end justify-content-center">
-                                                    <p class="mb-0">08/09/2023</p>
-                                                    <p><small>22:30 HS</small></p>
+                                                    <div class="d-flex align-items-center mt-3">
+                                                        <span class="col-4 text-nowrap text-start">
+                                                            <img src="media/img/logo-poeta.jpg" class="rounded-circle me-1" alt="Logo Poeta" style="height: 20px; width: 20px;">
+                                                            <span>Poeta</span>
+                                                        </span>
+                                                        <span class="col-1 text-center">2</span>
+                                                        <span class="col-1 text-center">0</span>
+                                                        <span class="col-1 text-center">2</span>
+                                                        <span class="col-1 text-center bg-amarillo-200 fw-bold rounded-2">2</span>
+                                                        <span class="col-1 text-center">45</span>
+                                                        <span class="col-2 text-center">88</span>
+                                                        <span class="col-1 text-center bg-amarillo-200 fw-bold rounded-2">-43</span>
+                                                    </div>
                                                 </div>
-
                                             </div>
-
-
                                         </div>
-
-                                    </div>
-
-                                    <div class="tab-pane fade" id="fecha-3" role="tabpanel" aria-labelledby="fecha-3-tab">
-                                        Fecha 3
+                                        
                                     </div>
 
 
-                                    <div class="tab-pane fade" id="fecha-4" role="tabpanel" aria-labelledby="fecha-4-tab">
-                                        Fecha 4
+                                    <div class="tab-pane fade" id="stats" role="tabpanel" aria-labelledby="stats">
+                                        <div class="px-2 py-2 p-md-4">
+                                            <div class="row border rounded-2 my-2 p-2 justify-content-between amarillo-200 bg-rojo-500">
+                                                <div class="col-12 fw-bold text-nowrap text-center">Tabla de Goleadoras a la Fecha 2</div>
+                                            </div>
+                                            
+                                            <div class="row justify-content-around">
+                                                <div class="col-12 col-md-6 border rounded-2 my-2 p-4 p-md-4 justify-content-center">
+                                                    <div class="d-flex mb-0 fw-bold">
+                                                        <span class="col-1 text-center">#</span>
+                                                        <span class="col-2 text-center">E</span>
+                                                        <span class="col-7 text-start">Jugadora</span>
+                                                        <span class="col-2 text-center">Pt/Pj</span>
+                                                    </div>
+                                                    
+                                                    <hr class="mt-1" />
+                                                    
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <span class="col-1 text-center">1</span>
+                                                        <span class="col-2 text-center">
+                                                            <img src="media/img/logo-chelcas.jpeg" class="rounded-circle me-1" alt="Logo Chelcas" style="height: 20px; width: 20px;">
+                                                        </span>
+                                                        <span class="col-7 text-start text-nowrap">Bortoli, M. Laura</span>
+                                                        <span class="col-2 text-center bg-amarillo-200 rounded-2"><b>25</b> (2)</span>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <span class="col-1 text-center">2</span>
+                                                        <span class="col-2 text-center">
+                                                            <img src="media/img/logo-cai.png" class="me-1" alt="Logo CAI" style="height: 20px; width: 20px;">
+                                                        </span>
+                                                        <span class="col-7 text-start text-nowrap">Godoy, Natalia</span>
+                                                        <span class="col-2 text-center bg-amarillo-200 rounded-2"><b>20</b> (2)</span>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center mt-3">
+                                                        <span class="col-1 text-center">3</span>
+                                                        <span class="col-2 text-center">
+                                                            <img src="media/img/logo-poeta.jpg" class="rounded-circle me-1" alt="Logo Poeta" style="height: 20px; width: 20px;">
+                                                        </span>
+                                                        <span class="col-7 text-start text-nowrap">Rivero, Yanina A.</span>
+                                                        <span class="col-2 text-center bg-amarillo-200 rounded-2"><b>18</b> (2)</span>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center mt-3">
+                                                        <span class="col-1 text-center">4</span>
+                                                        <span class="col-2 text-center">
+                                                            <img src="media/img/logo-poeta.jpg" class="rounded-circle me-1" alt="Logo Poeta" style="height: 20px; width: 20px;">
+                                                        </span>
+                                                        <span class="col-7 text-start text-nowrap">Bertola, Melisa</span>
+                                                        <span class="col-2 text-center bg-amarillo-200 rounded-2"><b>17</b> (2)</span>
+                                                    </div>
+                                                    
+
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <span class="col-1 text-center">5</span>
+                                                        <span class="col-2 text-center">
+                                                            <img src="media/img/logo-hindu-club.jpeg" class="rounded-circle me-1" alt="Logo Hindu" style="height: 20px; width: 20px;">
+                                                        </span>
+                                                        <span class="col-7 text-start text-nowrap">Artaza, Yudith</span>
+                                                        <span class="col-2 text-center bg-amarillo-200 rounded-2"><b>16</b> (2)</span>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <span class="col-1 text-center">6</span>
+                                                        <span class="col-2 text-center">
+                                                            <img src="media/img/logo-chelcas.jpeg" class="rounded-circle me-1" alt="Logo Chelcas" style="height: 20px; width: 20px;">
+                                                        </span>
+                                                        <span class="col-7 text-start text-nowrap">Karlen, Micaela P.</span>
+                                                        <span class="col-2 text-center bg-amarillo-200 rounded-2"><b>15</b> (2)</span>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <span class="col-1 text-center">7</span>
+                                                        <span class="col-2 text-center">
+                                                            <img src="media/img/logo-hindu-club.jpeg" class="rounded-circle me-1" alt="Logo Hindu" style="height: 20px; width: 20px;">
+                                                        </span>
+                                                        <span class="col-7 text-start text-nowrap">Toral, M. Macarena</span>
+                                                        <span class="col-2 text-center bg-amarillo-200 rounded-2"><b>14</b> (2)</span>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <span class="col-1 text-center">8</span>
+                                                        <span class="col-2 text-center">
+                                                            <img src="media/img/logo-hindu-club.jpeg" class="rounded-circle me-1" alt="Logo Hindu" style="height: 20px; width: 20px;">
+                                                        </span>
+                                                        <span class="col-7 text-start text-nowrap">Zabala, M. Laura</span>
+                                                        <span class="col-2 text-center bg-amarillo-200 rounded-2"><b>10</b> (1)</span>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <span class="col-1 text-center">9</span>
+                                                        <span class="col-2 text-center">
+                                                            <img src="media/img/logo-chelcas.jpeg" class="rounded-circle me-1" alt="Logo Chelcas" style="height: 20px; width: 20px;">
+                                                        </span>
+                                                        <span class="col-7 text-start text-nowrap">Valle, Sandra M.</span>
+                                                        <span class="col-2 text-center bg-amarillo-200 rounded-2"><b>10</b> (2)</span>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <span class="col-1 text-center">10</span>
+                                                        <span class="col-2 text-center">
+                                                            <img src="media/img/logo-chelcas.jpeg" class="rounded-circle me-1" alt="Logo Chelcas" style="height: 20px; width: 20px;">
+                                                        </span>
+                                                        <span class="col-7 text-start text-nowrap">Berra, Aylen D.</span>
+                                                        <span class="col-2 text-center bg-amarillo-200 rounded-2"><b>10</b> (2)</span>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center my-3">
+                                                        <span class="col-1 text-center">10</span>
+                                                        <span class="col-2 text-center">
+                                                            <img src="media/img/logo-hindu-club.jpeg" class="rounded-circle me-1" alt="Logo Hindu" style="height: 20px; width: 20px;">
+                                                        </span>
+                                                        <span class="col-7 text-start text-nowrap">Britos , M. Luz</span>
+                                                        <span class="col-2 text-center bg-amarillo-200 rounded-2"><b>10</b> (2)</span>
+                                                    </div>
+                                                </div>
+                                            </div>        
+                                        </div>
                                     </div>
                                 </div>
-
-
-
-
                             </div>
-
-
-
                         </section>
-
                     </div>
                 </div>
-
             </div>
         </main>
 
@@ -256,6 +432,8 @@
             <a href="https://www.instagram.com/ebaf.basquet/" class="bordo-500 p-1" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://www.facebook.com/basquetfeme/" class="bordo-500 p-1" target="_blank"><i class="bi bi-facebook"></i></a>
         </footer>
+
+
 
         <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

@@ -52,3 +52,4 @@ footer {
 
 /*header .logo-ebaf {} */
 /* nav .nav-item {} */
+nav .nav-item .nav-link:hover {text-decoration: underline;}
