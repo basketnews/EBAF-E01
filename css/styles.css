@@ -1,3 +1,34 @@
+:root{
+    --amarillo-200: #ffffdb;
+    --amarillo-500: #ffc60b;
+    --amarillo-600: #ffc301;
+    --naranja-300:  #ff8901;
+    --naranja-500:  #ff5733;
+    --rojo-500:     #c70039;
+    --bordo-500:    #900c3e;
+    --negro-500:    #444444;
+}
+
+.amarillo-200 {color: var(--amarillo-200);}
+.amarillo-500 {color: var(--amarillo-500);}
+.amarillo-600 {color: var(--amarillo-600);}
+.naranja-300 {color: var(--naranja-300);}
+.naranja-500 {color: var(--naranja-500);}
+.rojo-500 {color: var(--rojo-500);}
+.bordo-500 {color: var(--bordo-500);}
+.negro-500 {color: var(--negro-500);}
+
+.bg-amarillo-200 {background-color: var(--amarillo-200);}
+.bg-amarillo-500 {background-color: var(--amarillo-500);}
+.bg-amarillo-600 {background-color: var(--amarillo-600);}
+.bg-naranja-300 {background-color: var(--naranja-300);}
+.bg-naranja-500 {background-color: var(--naranja-500);}
+.bg-rojo-500 {background-color: var(--rojo-500);}
+.bg-bordo-500 {background-color: var(--bordo-500);}
+.bg-negro-500 {background-color: var(--negro-500);}
+
+
+
 body {
     align-items: stretch;
     display: grid;
@@ -11,11 +42,8 @@ body {
 }
 
 header {
-    /* align-items: center; */
     grid-area: header;
-    /* flex-wrap: wrap;
-    align-content: center;
-    height: 10vh; */
+    min-height: 10vh;
 }
 
 /* nav {} */
@@ -30,26 +58,16 @@ footer {
     min-height: 10vh;
 }
 
-
-.amarillo-200 {color: #ffffdb;}
-.amarillo-500 {color: #ffc60b;}
-.amarillo-600 {color: #ffc301;}
-.naranja-300 {color: #ff5733;}
-.naranja-500 {color: #ff8901;}
-.bordo-500 {color: #900c3e;}
-.rojo-500 {color: #c70039;}
-.negro-500 {color:#444444;}
-
-.bg-amarillo-200 {background-color: #ffffdb;}
-.bg-amarillo-500 {background-color: #ffc60b;}
-.bg-amarillo-600 {background-color: #ffc301;}
-.bg-naranja-300 {background-color: #ff5733;}
-.bg-naranja-500 {background-color: #ff8901;}
-.bg-bordo-500 {background-color: #900c3e;}
-.bg-rojo-500 {background-color: #c70039;}
-.bg-negro-500 {background-color:#444444;}
-
-
 /*header .logo-ebaf {} */
 /* nav .nav-item {} */
 nav .nav-item .nav-link:hover {text-decoration: underline;}
+
+
+.nav-pills .nav-link{
+    color: var(--naranja-500);
+}
+
+.nav-pills .nav-link.active{
+    color: var(--amarillo-200);
+    background-color: var(--naranja-500);
+}
