@@ -18,7 +18,7 @@
                 <div class="container-fluid">
                     <a class="navbar-brand order-1 order-sm-1 m-0" href="#"><img src="media/img/ebaf_logo.png" class="logo-ebaf" alt="Logo EBAF" style="height: 60px;"/></a>
 
-                    <button class="navbar-toggler order-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler order-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" data-team=z>
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -55,9 +55,14 @@
                                                 <div class="card">
                                                     <img src="media/img/cai/equipo-cai.jpeg" class="card-img-top" alt="Equipo C.A.I.">
                                                     <div class="card-body">
-                                                    <h5 class="card-title">CAI</h5>
-                                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugiat repellendus aperiam autem nostrum rem eum dolorem.</p>
-                                                    <a href="#" class="btn btn-primary">Ver equipo</a>
+                                                        <h5 class="card-title">CAI</h5>
+                                                        <p class="card-text">
+                                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugiat repellendus aperiam autem nostrum rem eum dolorem.
+                                                        </p>
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide="0" data-bs-team="CAI">
+                                                            Ver jugadoras
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -69,7 +74,10 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title">Chelcas</h5>
                                                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugiat repellendus aperiam autem nostrum rem eum dolorem.</p>
-                                                        <a href="#" class="btn btn-primary">Ver equipo</a>
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide="0" data-bs-team="TSC">
+                                                            Ver jugadoras
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -81,7 +89,10 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title">Poeta Lugones</h5>
                                                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugiat repellendus aperiam autem nostrum rem eum dolorem.</p>
-                                                        <a href="#" class="btn btn-primary">Ver equipo</a>
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide="0" data-bs-team="PL">
+                                                            Ver jugadoras
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -93,7 +104,10 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title">Hindú Club</h5>
                                                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugiat repellendus aperiam autem nostrum rem eum dolorem.</p>
-                                                        <a href="#" class="btn btn-primary">Ver equipo</a>
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide="0" data-bs-team="HC">
+                                                            Ver jugadoras
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -101,6 +115,38 @@
                                         </div>
                                     </div>
 
+                                </div>
+                            </div>
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title text-center fs-5" id="exampleModalLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="">
+                                                <div id="carouselExampleCaptions" class="carousel slide"  style="width:100%;">
+                                                    <div class="carousel-inner" id="carousel-items">
+                                                        <!-- ------------------------------- -->
+                                                        <!-- Acá van los slides del carousel -->
+                                                        <!-- ------------------------------- -->
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -117,6 +163,55 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <script src="/config/data.js"></script>
+
+        <script>
+
+            document.addEventListener("DOMContentLoaded", () => {
+                console.log("Hello World!");
+
+                const myModalEl = document.getElementById('exampleModal');
+
+                myModalEl.addEventListener('show.bs.modal', event => {
+                    const teamSelected = event.relatedTarget.dataset.bsTeam;
+                    teamPlayers = Object.values(players).filter((player) => player.team.alias == teamSelected);
+
+                    document.getElementById('exampleModalLabel').innerHTML = teamPlayers[0].team.name;
+
+                    let slides=[];
+                    let indicators=[];
+                    let html='';
+                    let activeClass;
+
+                    teamPlayers.forEach(item => {
+                        // set up the slide
+                        activeClass = slides.length == 0 ? ' active ' : '' ; // the carousel has to have 1 active slide when it starts or else nothing will show. We set the first one as 'active' based on the length of the array we're making (when it's 0, that means we on the first one)
+                        html = '<div class="carousel-item ' + activeClass + '">'
+                        html += '<img src="' + item.foto + '" class="d-block w-100" alt="Foto ' + item.lname + ' ' + item.fname + '">'
+                        html += '<div class="carousel-caption d-none d-md-block">'
+                        html += '<h5>' + item.fname + ' ' + item.lname + '</h5>'
+                        html += '<p>Camiseta: ' + item.shirt + '</p>'
+                        html += '<p>Altura: ' + item.height + '</p>'
+                        html += '</div></div>'
+                        slides.push(html);
+
+                        // set up the indicator
+                        activeClass = indicators.length == 0 ? ' class="active" ' : '' ; // see note about the active slide above- same goes for the indicators
+                        //html = '<li data-target="#carouselExampleIndicators" data-slide-to="' + indicators.length + '" ' + activeClass + '></li>';
+                        //indicators.push(html);
+                    });
+
+
+                    // now add it to your carousel and fire it up!
+
+                    //document.getElementById('carousel-indicators').innerHTML = indicators.join('');
+                    document.getElementById('carousel-items').innerHTML = slides.join('');
+
+                    //$('#carouselExampleIndicators').carousel(); // This line assumes you have jQuery loaded with Bootstrap
+                });
+
+            });
+
+        </script>
 
         <script>
         </script>
