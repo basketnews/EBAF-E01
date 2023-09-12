@@ -1,34 +1,3 @@
-:root{
-    --amarillo-200: #ffffdb;
-    --amarillo-500: #ffc60b;
-    --amarillo-600: #ffc301;
-    --naranja-300:  #ff8901;
-    --naranja-500:  #ff5733;
-    --rojo-500:     #c70039;
-    --bordo-500:    #900c3e;
-    --negro-500:    #444444;
-}
-
-.amarillo-200 {color: var(--amarillo-200);}
-.amarillo-500 {color: var(--amarillo-500);}
-.amarillo-600 {color: var(--amarillo-600);}
-.naranja-300 {color: var(--naranja-300);}
-.naranja-500 {color: var(--naranja-500);}
-.rojo-500 {color: var(--rojo-500);}
-.bordo-500 {color: var(--bordo-500);}
-.negro-500 {color: var(--negro-500);}
-
-.bg-amarillo-200 {background-color: var(--amarillo-200);}
-.bg-amarillo-500 {background-color: var(--amarillo-500);}
-.bg-amarillo-600 {background-color: var(--amarillo-600);}
-.bg-naranja-300 {background-color: var(--naranja-300);}
-.bg-naranja-500 {background-color: var(--naranja-500);}
-.bg-rojo-500 {background-color: var(--rojo-500);}
-.bg-bordo-500 {background-color: var(--bordo-500);}
-.bg-negro-500 {background-color: var(--negro-500);}
-
-
-
 body {
     align-items: stretch;
     display: grid;
@@ -80,10 +49,10 @@ nav .nav-item .nav-link:hover {text-decoration: underline;}
             to bottom,
             transparent, rgba(0, 0, 0, .7)
         );
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

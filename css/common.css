@@ -1,0 +1,135 @@
+:root{
+    --amarillo-200: #ffffdb;
+    --amarillo-500: #ffc60b;
+    --amarillo-600: #ffc301;
+    --naranja-300:  #ff8901;
+    --naranja-500:  #ff5733;
+    --rojo-500:     #c70039;
+    --bordo-500:    #900c3e;
+    --negro-500:    #444444;
+}
+
+.amarillo-200 {color: var(--amarillo-200);}
+.amarillo-500 {color: var(--amarillo-500);}
+.amarillo-600 {color: var(--amarillo-600);}
+.naranja-300 {color: var(--naranja-300);}
+.naranja-500 {color: var(--naranja-500);}
+.rojo-500 {color: var(--rojo-500);}
+.bordo-500 {color: var(--bordo-500);}
+.negro-500 {color: var(--negro-500);}
+
+.bg-amarillo-200 {background-color: var(--amarillo-200);}
+.bg-amarillo-500 {background-color: var(--amarillo-500);}
+.bg-amarillo-600 {background-color: var(--amarillo-600);}
+.bg-naranja-300 {background-color: var(--naranja-300);}
+.bg-naranja-500 {background-color: var(--naranja-500);}
+.bg-rojo-500 {background-color: var(--rojo-500);}
+.bg-bordo-500 {background-color: var(--bordo-500);}
+.bg-negro-500 {background-color: var(--negro-500);}
+
+.bg-ho-amarillo-200:hover,
+.bg-ho-amarillo-200:focus,
+.bg-ho-amarillo-200:focus-visible,
+.bg-ho-amarillo-200:active {
+    background-color: var(--amarillo-200) !important;
+}
+.bg-ho-amarillo-500:hover,
+.bg-ho-amarillo-500:focus,
+.bg-ho-amarillo-500:focus-visible,
+.bg-ho-amarillo-500:active {
+    background-color: var(--amarillo-500) !important;
+}
+.bg-ho-amarillo-600:hover,
+.bg-ho-amarillo-600:focus,
+.bg-ho-amarillo-600:focus-visible,
+.bg-ho-amarillo-600:active {
+    background-color: var(--amarillo-600) !important;
+}
+.bg-ho-naranja-300:hover,
+.bg-ho-naranja-300:focus,
+.bg-ho-naranja-300:focus-visible,
+.bg-ho-naranja-300:active {
+    background-color: var(--naranja-300) !important;
+}
+.bg-ho-naranja-500:hover,
+.bg-ho-naranja-500:focus,
+.bg-ho-naranja-500:focus-visible,
+.bg-ho-naranja-500:active {
+    background-color: var(--naranja-500) !important;
+}
+.bg-ho-rojo-500:hover,
+.bg-ho-rojo-500:focus,
+.bg-ho-rojo-500:focus-visible,
+.bg-ho-rojo-500:active {
+    background-color: var(--rojo-500) !important;
+}
+.bg-ho-bordo-500:hover,
+.bg-ho-bordo-500:focus,
+.bg-ho-bordo-500:focus-visible,
+.bg-ho-bordo-500:active {
+    background-color: var(--bordo-500) !important;
+}
+.bg-ho-negro-500:hover,
+.bg-ho-negro-500:focus,
+.bg-ho-negro-500:focus-visible,
+.bg-ho-negro-500:active {
+    background-color: var(--negro-500) !important;
+}
+
+.border-amarillo-200 {border-color: var(--amarillo-200);}
+.border-amarillo-500 {border-color: var(--amarillo-500);}
+.border-amarillo-600 {border-color: var(--amarillo-600);}
+.border-naranja-300 {border-color: var(--naranja-300);}
+.border-naranja-500 {border-color: var(--naranja-500);}
+.border-rojo-500 {border-color: var(--rojo-500);}
+.border-bordo-500 {border-color: var(--bordo-500);}
+.border-negro-500 {border-color: var(--negro-500);}
+
+.border-ho-amarillo-200:hover,
+.border-ho-amarillo-200:focus,
+.border-ho-amarillo-200:focus-visible,
+.border-ho-amarillo-200:active {
+    border-color: var(--amarillo-200) !important;
+}
+.border-ho-amarillo-500:hover,
+.border-ho-amarillo-500:focus,
+.border-ho-amarillo-500:focus-visible,
+.border-ho-amarillo-500:active {
+    border-color: var(--amarillo-500) !important;
+}
+.border-ho-amarillo-600:hover,
+.border-ho-amarillo-600:focus,
+.border-ho-amarillo-600:focus-visible,
+.border-ho-amarillo-600:active {
+    border-color: var(--amarillo-600) !important;
+}
+.border-ho-naranja-300:hover,
+.border-ho-naranja-300:focus,
+.border-ho-naranja-300:focus-visible,
+.border-ho-naranja-300:active {
+    border-color: var(--naranja-300) !important;
+}
+.border-ho-naranja-500:hover,
+.border-ho-naranja-500:focus,
+.border-ho-naranja-500:focus-visible,
+.border-ho-naranja-500:active {
+    border-color: var(--naranja-500) !important;
+}
+.border-ho-rojo-500:hover,
+.border-ho-rojo-500:focus,
+.border-ho-rojo-500:focus-visible,
+.border-ho-rojo-500:active {
+    border-color: var(--rojo-500) !important;
+}
+.border-ho-bordo-500:hover,
+.border-ho-bordo-500:focus,
+.border-ho-bordo-500:focus-visible,
+.border-ho-bordo-500:active {
+    border-color: var(--bordo-500) !important;
+}
+.border-ho-negro-500:hover,
+.border-ho-negro-500:focus,
+.border-ho-negro-500:focus-visible,
+.border-ho-negro-500:active {
+    border-color: var(--negro-500) !important;
+}
