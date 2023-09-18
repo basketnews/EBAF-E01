@@ -133,3 +133,7 @@
 .border-ho-negro-500:active {
     border-color: var(--negro-500) !important;
 }
+
+.d-grid{
+    display: grid;
+}

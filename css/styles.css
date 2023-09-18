@@ -56,3 +56,112 @@ nav .nav-item .nav-link:hover {text-decoration: underline;}
     width: 100%;
     height: 100%;
 }
+
+
+
+/********************/
+/*Galerias / Galeria*/
+/********************/
+.grid-galeria,
+.grid-galerias{
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px;
+    grid-auto-rows: 240px;
+    grid-auto-flow: dense;
+    column-gap: 16px;
+    row-gap: 24px;
+    /* justify-items: stretch;
+    align-items: stretch; */
+}
+
+
+.grid-galerias article{
+    border: 0;
+}
+
+.grid-galeria img,
+.grid-galerias img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.grid-galerias article.destacado img{
+
+}
+
+
+.grid-galerias article .card-img-overlay{
+    position: absolute;
+    top: inherit;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    min-height: 25%;
+    padding: 8px 16px;
+    border-radius: 0;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.grid-galerias article .card-title{
+    font-size: 18px;
+    color: var(--amarillo-200);
+}
+
+.grid-galerias article .card-text{
+    font-size: 14px;
+    color: var(--amarillo-200);
+    padding: 0;
+    margin: 0;
+}
+
+.grid-galerias article .card-text.fecha{
+    font-size: 13px;
+    color: var(--amarillo-200);
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+
+.grid-galerias .box-shadow{
+	-webkit-box-shadow: 0 1px 1px rgba(72,78,85,.6);
+	box-shadow: 0 1px 1px rgba(72,78,85,.6);
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+
+.grid-galerias .box-shadow:hover{
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(68,68,68,0.75);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(68,68,68,0.75);
+    box-shadow: 0px 0px 10px 3px rgba(68,68,68,0.75);
+	-webkit-transform: translateY(-8px);
+	-moz-transform: translateY(-8px);
+	-ms-transform: translateY(-8px);
+	-o-transform: translateY(-8px);
+	transform: translateY(-8px);
+}
+
+.grid-galeria img{
+    width: 100%;
+    height: 240px;
+}
+
+
+@media(min-width: 768px){
+
+    .grid-galeria,
+    .grid-galerias{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid-galerias article.destacado{
+        grid-row-end: span 2;
+        grid-column-end: span 2;
+    }
+}
