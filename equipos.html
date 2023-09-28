@@ -54,12 +54,12 @@
 
                                             <div class="col-sm-6 mb-3 mb-sm-4">
                                                 <div class="card border-naranja-500 border-2 rounded-3 overflow-hidden">
-                                                    <img src="media/img/cai/equipo-cai.jpeg" class="card-img-top rounded-0" alt="Equipo C.A.I." width="346" height="260">
+                                                    <img src="media/img/cai/equipo-cai.jpeg" class="card-img-top rounded-0 object-fit-cover" alt="Equipo C.A.I." width="346" height="260">
                                                     <div class="card-body">
-                                                        <h5 class="card-title bordo-500">CAI</h5>
-                                                        <p class="card-text">
-                                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugiat repellendus aperiam autem nostrum rem eum dolorem.
-                                                        </p>
+                                                        <h5 class="card-title bordo-500 mb-3">CAI</h5>
+                                                        <!-- <p class="card-text">
+                                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugiat repellendus aperiam autem nostrum rem eum dolorem.</p> -->
+
                                                         <!-- Button trigger modal -->
                                                         <button type="button" class="btn btn-primary amarillo-200 bg-naranja-500 bg-ho-naranja-300 border-naranja-500 border-ho-naranja-300" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide="0" data-bs-team="CAI">
                                                             Ver jugadoras
@@ -71,10 +71,10 @@
                                             <div class="col-sm-6 mb-3 mb-sm-4">
 
                                                 <div class="card border-naranja-500 border-2 rounded-3 overflow-hidden">
-                                                    <img src="media/img/chelcas/equipo-chelcas.jpeg" class="card-img-top rounded-0" alt="Equipo Chelcas" width="346" height="260">
+                                                    <img src="media/img/chelcas/equipo-chelcas.jpeg" class="card-img-top rounded-0 object-fit-cover" alt="Equipo Chelcas" width="346" height="260">
                                                     <div class="card-body">
-                                                        <h5 class="card-title bordo-500">Chelcas</h5>
-                                                        <p class="card-text negro-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugiat repellendus aperiam autem nostrum rem eum dolorem.</p>
+                                                        <h5 class="card-title bordo-500 mb-3">Chelcas</h5>
+                                                        <!-- <p class="card-text negro-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugiat repellendus aperiam autem nostrum rem eum dolorem.</p> -->
                                                         <!-- Button trigger modal -->
                                                         <button type="button" class="btn btn-primary amarillo-200 bg-naranja-500 bg-ho-naranja-300 border-naranja-500 border-ho-naranja-300" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide="0" data-bs-team="TSC">
                                                             Ver jugadoras
@@ -86,10 +86,10 @@
 
                                             <div class="col-sm-6 mb-3 mb-sm-4">
                                                 <div class="card border-naranja-500 border-2 rounded-3 overflow-hidden">
-                                                    <img src="media/img/poeta/equipo-poeta-lugones.jpeg" class="card-img-top rounded-0" alt="Equipo Poeta Lugones" width="346" height="260">
+                                                    <img src="media/img/poeta/equipo-poeta-lugones.jpeg" class="card-img-top rounded-0 object-fit-cover" alt="Equipo Poeta Lugones" width="346" height="260">
                                                     <div class="card-body">
-                                                        <h5 class="card-title bordo-500">Poeta Lugones</h5>
-                                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugiat repellendus aperiam autem nostrum rem eum dolorem.</p>
+                                                        <h5 class="card-title bordo-500 mb-3">Poeta Lugones</h5>
+                                                        <!-- <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugiat repellendus aperiam autem nostrum rem eum dolorem.</p> -->
                                                         <!-- Button trigger modal -->
                                                         <button type="button" class="btn btn-primary amarillo-200 bg-naranja-500 bg-ho-naranja-300 border-naranja-500 border-ho-naranja-300" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide="0" data-bs-team="PL">
                                                             Ver jugadoras
@@ -101,10 +101,10 @@
 
                                             <div class="col-sm-6 mb-3 mb-sm-4">
                                                 <div class="card border-naranja-500 border-2 rounded-3 overflow-hidden">
-                                                    <img src="media/img/hindu/equipo-hindu.jpeg" class="card-img-top rounded-0" alt="Equipo Hindú Club" width="346" height="260">
+                                                    <img src="media/img/hindu/equipo-hindu.jpeg" class="card-img-top rounded-0 object-fit-cover" alt="Equipo Hindú Club" width="346" height="260">
                                                     <div class="card-body">
-                                                        <h5 class="card-title bordo-500">Hindú Club</h5>
-                                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugiat repellendus aperiam autem nostrum rem eum dolorem.</p>
+                                                        <h5 class="card-title bordo-500 mb-3">Hindú Club</h5>
+                                                        <!-- <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugiat repellendus aperiam autem nostrum rem eum dolorem.</p> -->
                                                         <!-- Button trigger modal -->
                                                         <button type="button" class="btn btn-primary amarillo-200 bg-naranja-500 bg-ho-naranja-300 border-naranja-500 border-ho-naranja-300" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide="0" data-bs-team="HC">
                                                             Ver jugadoras
@@ -188,9 +188,8 @@
                         html = '<div class="carousel-item ' + activeClass + '">'
                         html += '<img src="' + item.foto + '" class="d-block w-100" alt="Foto ' + item.lname + ' ' + item.fname + '">'
                         html += '<div class="carousel-caption d-block">'
-                        html += '<h5>' + item.fname + ' ' + item.lname + '</h5>'
-                        html += '<p>Camiseta: ' + item.shirt + '</p>'
-                        html += '<p>Altura: ' + item.height + '</p>'
+                        html += '<h5 style?>' +  item.fname.toUpperCase() + ' ' + item.lname.toUpperCase() + '</h5>'
+                        html += '<p>Altura: ' + (item.height !== null ? item.height + 'm' : '-') + '</p>'
                         html += '</div></div>'
                         slides.push(html);
 
