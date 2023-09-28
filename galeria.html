@@ -65,6 +65,7 @@
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="config/galerias.js"></script>
 
         <script>
             document.addEventListener("DOMContentLoaded", () => {
@@ -72,47 +73,19 @@
                 const searchParams = new URLSearchParams(window.location.search);
                 let jornada = searchParams.has('jornada') ? searchParams.get('jornada') : '1';
                 let gal = searchParams.has('gal') ? searchParams.get('gal') : 'resumen';
-
                 getImgs(jornada, gal);
 
             });
 
             function getImgs(jornada, gal){
-                let xhr = new XMLHttpRequest();
-                let main = document.getElementById('main');
-                let section = document.getElementById('section');
-                let container = document.getElementById('container');
-                let row = document.getElementById('row');
-                let col12 = document.getElementById('col-12');
-                let grid = document.getElementById('grid');
+                const grid = document.getElementById('grid');
+                const galeria = galerias['jornada'+jornada][gal];
 
-                let url = "media/img/jornada-"+jornada+"/"+gal;
-                xhr.open("GET", url, true);
-                xhr.responseType = 'document';
-                xhr.onload = () => {
-                    if (xhr.status === 200) {
-
-                        var elements = xhr.response.getElementsByTagName("a");
-                        for (x of elements) {
-                            if ( x.href.match(/\.(jpe?g|png|gif)$/) ) {
-                                let img = document.createElement("img");
-                                img.src = x.href;
-                                main.appendChild(section);
-                                section.appendChild(container);
-                                container.appendChild(row);
-                                row.appendChild(col12);
-                                col12.appendChild(grid);
-                                grid.appendChild(img);
-                                document.body.appendChild(main);
-                            }
-                        };
-                    }
-                    else {
-                        //alert('Request failed. Returned status of ' + xhr.status);
-                    }
+                for (const [key, value] of Object.entries(galeria)) {
+                    let img = document.createElement("img");
+                    img.src = value;
+                    grid.appendChild(img);
                 }
-                xhr.send()
-
             }
         </script>
     </body>
